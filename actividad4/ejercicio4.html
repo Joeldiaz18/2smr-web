@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de prueba de HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 5px;
+        }
+        input, select {
+            margin-bottom: 10px;
+            padding: 3px;
+        }
+        .checkbox-group, .radio-group {
+            margin-bottom: 10px;
+        }
+        .checkbox-group label, .radio-group label {
+            display: inline;
+            width: auto;
+            margin-right: 15px;
+        }
+        .button-group {
+            margin-top: 15px;
+        }
+        .button-group button {
+            margin-right: 10px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <form method="GET" action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required autofocus><br>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="url">URL:</label>
+            <input type="url" id="url" name="url" placeholder="Escribe la URL de tu página web personal"><br>
+            
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad" name="ciudad">
+                <option value="Almería">Almería</option>
+                <option value="Cádiz">Cádiz</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Granada">Granada</option>
+                <option value="Huelva">Huelva</option>
+                <option value="Jaén">Jaén</option>
+                <option value="Málaga">Málaga</option>
+                <option value="Sevilla" selected>Sevilla</option>
+            </select><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Otros datos</legend>
+            
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha"><br>
+            
+            <label for="tiempo">Tiempo:</label>
+            <input type="time" id="tiempo" name="tiempo"><br>
+            
+            <label for="fecha_hora">Fecha y hora:</label>
+            <input type="datetime-local" id="fecha_hora" name="fecha_hora"><br>
+            
+            <label for="mes">Mes:</label>
+            <input type="month" id="mes" name="mes"><br>
+            
+            <label for="semana">Semana:</label>
+            <input type="week" id="semana" name="semana"><br>
+            
+            <label for="numero">Número (min -10, max 10):</label>
+            <input type="number" id="numero" name="numero" min="-10" max="10" value="0"><br>
+            
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br>
+            
+            <label for="busqueda">Término de búsqueda:</label>
+            <input type="search" id="busqueda" name="busqueda"><br>
+            
+            <label for="color">Color favorito:</label>
+            <input type="color" id="color" name="color" value="#000000"><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Otros controles</legend>
+            
+            <div class="checkbox-group">
+                <label>Aficiones</label>
+                <label><input type="checkbox" name="aficiones[]" value="1" checked> Cine</label>
+                <label><input type="checkbox" name="aficiones[]" value="1"> Deporte</label>
+            </div>
+            
+            <div class="radio-group">
+                <label>Forma de pago</label><br>
+                <label><input type="radio" name="pago" value="V"> Visa</label>
+                <label><input type="radio" name="pago" value="A"> American Express</label>
+                <label><input type="radio" name="pago" value="M"> MasterCard</label>
+            </div>
+        </fieldset>
+        
+        <div class="button-group">
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </div>
+    </form>
+</body>
+</html>
