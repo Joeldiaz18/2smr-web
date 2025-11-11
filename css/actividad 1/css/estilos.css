@@ -1,6 +1,6 @@
 body {
     background-color: lightgray;
-    font-family: sans-serif;
+    font-family: 'Sofia',sans-serif;
     margin: 10px;
 }
 
@@ -11,9 +11,10 @@ h1 {
 }
 
 h2 {
-    float: clear;
+    clear: both;
     background-color: gray;
     color: white;
+    font-size: 200%;
 }
 
 p {
