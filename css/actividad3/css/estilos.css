@@ -34,3 +34,30 @@ p.bola {
     border-image-source: url(../img/bola-100.png);
 }
 
+p.pastilla {
+    padding: 20px;
+    border: 25px solid transparent;
+    border-image-source: url(../img/pastilla.png);
+    border-image-slice: 25;   
+    border-image-repeat: stretch;
+}
+
+p.ventana {
+    border:50px solid;
+    border-image-source: url(../img/ventana.png);
+    border-image-slice: 50 80 20 80;
+    border-image-width: 50px 80px 20px 80px;
+}
+
+p.hormigas {
+    border: 10px solid black;
+    border-image-source: url(../img/hormigas.png);
+    border-image-repeat:stretch;
+    border-image-slice: 70;
+    border-image-width: 4;
+    padding: 40px;
+}
+
+.spanazul {
+    color: blue;
+}
